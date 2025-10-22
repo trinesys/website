@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trine Systems — Cloud-Native Engineering at Scale</title>
+  <meta name="description" content="Trine Systems helps teams design, build, and operate reliable, cost-efficient cloud-native platforms across Kubernetes, OpenStack, and modern infrastructure." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+          colors: {
+            brand: {
+              primary: '#0099FF',
+              dark: '#061059',
+              bgLight: '#F7F7F7',
+              bgDark: '#121212'
+            }
+          },
+          boxShadow: { soft: '0 10px 30px rgba(0,0,0,0.06)' }
+        }
+      }
+    }
+  </script>
+  <style>:root{--bg-light:#F7F7F7;}</style>
+</head>
+<body class="text-slate-900 antialiased tracking-tight">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 backdrop-blur bg-white/80 border-b border-black/5">
+    <div class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-3">
+        <img src="trine-logo.png" alt="Trine Systems Logo" class="h-8 w-auto opacity-90" />
+        <span class="font-semibold text-brand-dark text-lg">Trine Systems</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-[15px]">
+        <a href="#services" class="hover:text-brand-primary">Services</a>
+        <a href="#about" class="hover:text-brand-primary">About</a>
+        <a href="#contact" class="hover:text-brand-primary">Contact</a>
+        <a href="#contact" class="inline-flex items-center gap-2 rounded-xl bg-brand-primary text-white px-4 py-2 font-medium shadow-soft hover:opacity-90">Book a call</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="bg-gradient-to-b from-white to-[var(--bg-light)]">
+    <div class="mx-auto max-w-7xl px-4 py-20 md:py-28 grid md:grid-cols-12 gap-8 items-center">
+      <div class="md:col-span-7">
+        <h1 class="text-4xl md:text-6xl font-semibold leading-tight text-brand-dark">
+          We build Cloud-Native Platforms that <span class="text-brand-primary">scale</span>.
+        </h1>
+        <p class="mt-6 text-lg md:text-xl text-slate-700 max-w-2xl">
+          From Kubernetes and private or public cloud to GPU-accelerated data platforms, we design, harden, and run systems that are fast, reliable, and cost-efficient.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#contact" class="rounded-xl bg-brand-primary text-white px-5 py-3 font-medium shadow-soft">Talk to an engineer</a>
+          <a href="#services" class="rounded-xl px-5 py-3 font-medium border border-slate-300 hover:border-brand-primary">Explore services</a>
+        </div>
+      </div>
+      <div class="md:col-span-5">
+        <div class="aspect-[4/3] rounded-2xl border border-black/10 bg-white shadow-soft flex items-center justify-center">
+          <div class="p-6 text-center">
+            <div class="text-sm uppercase tracking-wider text-slate-500">Capabilities Snapshot</div>
+            <ul class="mt-4 text-left space-y-2 text-[15px]">
+              <li>✔️ Platform Engineering (Kubernetes, OpenShift, GitOps, Policy)</li>
+              <li>✔️ SRE & Reliability (SLIs/SLOs, incident & chaos)</li>
+              <li>✔️ Private & Public Cloud (Compute, Network, Object Storage)</li>
+              <li>✔️ Security & Zero Trust (Firewall, VPN, IDS/IPS)</li>
+              <li>✔️ GPU/AI Infrastructure and Data Platforms</li>
+              <li>✔️ Staff Augmentation (Kubernetes, Cloud, Security, SRE Experts)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What we do -->
+  <section id="services" class="py-20 bg-white border-t border-black/5">
+    <div class="mx-auto max-w-7xl px-4">
+      <h2 class="text-3xl md:text-4xl font-semibold text-brand-dark">What we do</h2>
+      <p class="mt-3 text-slate-600 max-w-2xl">Pragmatic engineering to ship faster, run safer, and spend less.</p>
+
+      <!-- Cloud-Native Platforms & Modernization -->
+      <h3 class="mt-10 mb-4 text-xl font-semibold text-brand-dark">Cloud-Native Platforms & Modernization</h3>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Public Cloud -->
+        <article class="rounded-2xl border border-black/10 p-6 hover:shadow-soft flex items-start gap-4 text-left">
+          <div class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand-primary/10 flex-shrink-0">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 text-brand-primary" aria-hidden="true"><path d="M3 15a4 4 0 0 1 4-4 5 5 0 0 1 9.584-1.003A4.5 4.5 0 1 1 17.5 19H7a4 4 0 0 1-4-4z"/></svg>
+          </div>
+          <div>
+            <h4 class="font-semibold text-lg">Public Cloud Consulting</h4>
+            <p class="mt-2 text-slate-600">Architecture design, modernization, migration, and cost optimization across AWS, Azure, and GCP environments — ensuring performance, reliability, and governance.</p>
+          </div>
+        </article>
+        <!-- Private Cloud -->
+        <article class="rounded-2xl border border-black/10 p-6 hover:shadow-soft flex items-start gap-4 text-left">
+          <div class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand-primary/10 flex-shrink-0">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 text-brand-primary" aria-hidden="true">
+              <rect x="4" y="5" width="16" height="6" rx="2"/>
+              <rect x="4" y="13" width="16" height="6" rx="2"/>
+              <circle cx="8" cy="8" r=".5"/>
+              <circle cx="8" cy="16" r=".5"/>
+            </svg>
+          </div>
+          <div>
+            <h4 class="font-semibold text-lg">Private Cloud Solutions</h4>
+            <p class="mt-2 text-slate-600">Deployment and operations of modern on-prem infrastructure with OpenStack, Proxmox, and Ceph — built for performance, resilience, and autonomy. Expertise includes compute, networking, and object storage design and integration.</p>
+          </div>
+        </article>
+        <!-- Platform Engineering -->
+        <article class="rounded-2xl border border-black/10 p-6 hover:shadow-soft flex items-start gap-4 text-left">
+          <div class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand-primary/10 flex-shrink-0">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 text-brand-primary" aria-hidden="true">
+              <path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.5 1.5 0 0 0 2.24.93c1.3-.75 2.79.74 2.04 2.04a1.5 1.5 0 0 0 .93 2.24c1.757.427 1.757 2.925 0 3.352a1.5 1.5 0 0 0-.93 2.24c.75 1.3-.74 2.79-2.04 2.04a1.5 1.5 0 0 0-2.24.93c-.427 1.757-2.925 1.757-3.352 0a1.5 1.5 0 0 0-2.24-.93c-1.3.75-2.79-.74-2.04-2.04a1.5 1.5 0 0 0-.93-2.24c-1.757-.427-1.757-2.925 0-3.352a1.5 1.5 0 0 0 .93-2.24c-.75-1.3.74-2.79 2.04-2.04.84.49 1.9.19 2.24-.93z"/>
+              <circle cx="12" cy="12" r="3"/>
+            </svg>
+          </div>
+          <div>
+            <h4 class="font-semibold text-lg">Platform Engineering</h4>
+            <p class="mt-2 text-slate-600">Self-serve developer platforms on Kubernetes or OpenShift with GitOps (Flux/Argo), secure supply chain, and policy automation.</p>
+          </div>
+        </article>
+        <!-- GPU/AI -->
+        <article class="rounded-2xl border border-black/10 p-6 hover:shadow-soft flex items-start gap-4 text-left">
+          <div class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand-primary/10 flex-shrink-0">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 text-brand-primary" aria-hidden="true">
+              <rect x="7" y="7" width="10" height="10" rx="2"/>
+              <path d="M7 5v2M12 5v2M17 5v2M19 7h-2M19 12h-2M19 17h-2M7 19v-2M12 19v-2M17 19v-2M5 7h2M5 12h2M5 17h2"/>
+            </svg>
+          </div>
+          <div>
+            <h4 class="font-semibold text-lg">GPU / AI Infrastructure</h4>
+            <p class="mt-2 text-slate-600">Kubernetes + KubeVirt for accelerated data/ML, GPU scheduling, observability, and tenancy.</p>
+          </div>
+        </article>
+        <!-- VMware Migrations -->
+        <article class="rounded-2xl border border-black/10 p-6 hover:shadow-soft flex items-start gap-4 text-left">
+          <div class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand-primary/10 flex-shrink-0">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 text-brand-primary" aria-hidden="true">
+              <path d="M9 7h6m0 0-3-3m3 3-3 3M15 17H6a3 3 0 0 1-3-3V7"/>
+            </svg>
+          </div>
+          <div>
+            <h4 class="font-semibold text-lg">Migrations from VMware</h4>
+            <p class="mt-2 text-slate-600">Warm migration: snapshots, continuous replication, and planned cutover with minimal downtime.</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- Enterprise Infrastructure & Services -->
+      <h3 class="mt-16 mb-4 text-xl font-semibold text-brand-dark">Enterprise Infrastructure & Services</h3>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Security Engineering -->
+        <article class="rounded-2xl border border-black/10 p-6 hover:shadow-soft flex items-start gap-4 text-left">
+          <div class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand-primary/10 flex-shrink-0">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 text-brand-primary" aria-hidden="true">
+              <path d="M12 3l7 4v5c0 5-3.5 9-7 9s-7-4-7-9V7l7-4z"/>
+              <path d="M10 15v-2a2 2 0 1 1 4 0v2h-4z"/>
+            </svg>
+          </div>
+          <div>
+            <h4 class="font-semibold text-lg">Security Engineering</h4>
+            <p class="mt-2 text-slate-600">Perimeter and network defense using open-source firewalls and IDS/IPS like IPFire, pfSense, and Snort. Implementation of Zero Trust access and VPN frameworks such as Pritunl, OpenVPN, and IPsec for site-to-site and remote workforce connectivity.</p>
+          </div>
+        </article>
+        <!-- End-User Computing -->
+        <article class="rounded-2xl border border-black/10 p-6 hover:shadow-soft flex items-start gap-4 text-left">
+          <div class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand-primary/10 flex-shrink-0">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 text-brand-primary" aria-hidden="true">
+              <rect x="3" y="5" width="18" height="12" rx="2"/>
+              <path d="M12 17v3M8 20h8"/>
+            </svg>
+          </div>
+          <div>
+            <h4 class="font-semibold text-lg">End-User Computing</h4>
+            <p class="mt-2 text-slate-600">Design and deployment of secure, scalable virtual desktop infrastructure (VDI) environments using open-source technologies — enabling centralized management, remote access, and data protection.</p>
+          </div>
+        </article>
+        <!-- Core Infra & Collaboration -->
+        <article class="rounded-2xl border border-black/10 p-6 hover:shadow-soft flex items-start gap-4 text-left">
+          <div class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand-primary/10 flex-shrink-0">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 text-brand-primary" aria-hidden="true">
+              <circle cx="12" cy="12" r="9"/>
+              <path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/>
+            </svg>
+          </div>
+          <div>
+            <h4 class="font-semibold text-lg">Core Infrastructure & Collaboration Services</h4>
+            <p class="mt-2 text-slate-600">Enterprise-ready infrastructure services including Active Directory, LDAP, DNS, DHCP, and email systems. Designed to complement modern cloud platforms with secure identity, policy enforcement, and unified communication for distributed teams.</p>
+          </div>
+        </article>
+        <!-- Staff Augmentation -->
+        <article class="rounded-2xl border border-black/10 p-6 hover:shadow-soft flex items-start gap-4 text-left">
+          <div class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand-primary/10 flex-shrink-0">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 text-brand-primary" aria-hidden="true">
+              <circle cx="12" cy="9" r="3.5"/>
+              <path d="M4 21a8 8 0 0 1 16 0"/>
+            </svg>
+          </div>
+          <div>
+            <h4 class="font-semibold text-lg">Staff Augmentation</h4>
+            <p class="mt-2 text-slate-600">Extend your in-house teams with experienced engineers specialized in Kubernetes, SRE, OpenStack, Proxmox, networking, security, and DevOps automation. We align talent to your project’s lifecycle—accelerating delivery without long-term overhead.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 bg-white border-t border-black/5">
+    <div class="mx-auto max-w-7xl px-4 grid md:grid-cols-12 gap-10 items-start">
+      <div class="md:col-span-7">
+        <h2 class="text-3xl md:text-4xl font-semibold text-brand-dark">About Trine Systems</h2>
+        <p class="mt-4 text-slate-700">We’re a global cloud engineering company with presence in Singapore and India. We help enterprises design, build, and operate reliable, secure, and cost-optimized cloud-native platforms—driving automation, scalability, and measurable outcomes.</p>
+        <ul class="mt-6 grid sm:grid-cols-2 gap-3 text-sm">
+          <li class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-brand-primary"></span> Multi-cluster, multi-DC architectures</li>
+          <li class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-brand-primary"></span> Security & supply-chain hardening</li>
+          <li class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-brand-primary"></span> GitOps and policy-as-code</li>
+          <li class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-brand-primary"></span> SLOs and actionable observability</li>
+        </ul>
+      </div>
+      <aside class="md:col-span-5">
+        <div class="rounded-2xl border border-black/10 p-6 bg-[var(--bg-light)]">
+          <h3 class="font-semibold">Fast facts</h3>
+          <dl class="mt-4 space-y-3 text-sm text-slate-700">
+            <div class="flex justify-between"><dt>Founded</dt><dd>2020</dd></div>
+            <div class="flex justify-between"><dt>HQ</dt><dd>Singapore</dd></div>
+            <div class="flex justify-between"><dt>Focus</dt><dd>Kubernetes • Cloud • SRE • Security</dd></div>
+            <div class="flex justify-between"><dt>International</dt><dd>India</dd></div>
+          </dl>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 bg-gradient-to-b from-white to-[var(--bg-light)] border-t border-black/5">
+    <div class="mx-auto max-w-2xl px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-semibold text-brand-dark">Let’s talk</h2>
+      <p class="mt-3 text-slate-600">Tell us about your goals. We’ll come back with a pragmatic plan and options in plain English.</p>
+      <form class="mt-8 grid gap-3">
+        <input type="text" name="name" placeholder="Your name" class="w-full rounded-xl border border-slate-300 px-4 py-3"/>
+        <input type="email" name="email" placeholder="Email" class="w-full rounded-xl border border-slate-300 px-4 py-3"/>
+        <textarea name="message" rows="4" placeholder="What would you like to build or improve?" class="w-full rounded-xl border border-slate-300 px-4 py-3"></textarea>
+        <button type="submit" class="rounded-xl bg-brand-primary text-white px-5 py-3 font-medium shadow-soft">Send</button>
+        <p class="text-sm text-slate-500">Or email us at <a class="text-brand-primary" href="mailto:hello@trine.systems">hello@trine.systems</a></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-10 bg-white border-t border-black/5">
+    <div class="mx-auto max-w-7xl px-4 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-slate-500">© <span id="y"></span> Trine Systems. All rights reserved.</p>
+      <div class="flex items-center gap-4 text-sm">
+        <a href="#" class="hover:text-brand-primary">Privacy</a>
+        <a href="#" class="hover:text-brand-primary">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Safely set year if the element exists
+    const yEl = document.getElementById('y');
+    if (yEl) yEl.textContent = new Date().getFullYear();
+
+    // Demo form handler
+    document.querySelector('form')?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Thanks! This demo form does not submit anywhere yet. Hook it up to Formspree/Netlify/Cloudflare to receive emails.');
+    });
+  </script>
+</body>
+</html>
